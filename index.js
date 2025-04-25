@@ -9,8 +9,8 @@ const unsibscribe = store.subscribe(() => {
   console.log("current State", store.getState());
 });
 
-// store.dispatch(pizzaActions.pizzaOrder())
-// store.dispatch(burgerActions.burgerOrder());
+store.dispatch(pizzaActions.pizzaOrder());
+store.dispatch(burgerActions.burgerOrder());
 store.dispatch(fetchDetails()).then(() => {
   console.log("my updated state ", store.getState());
 });
